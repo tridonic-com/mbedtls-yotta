@@ -33,7 +33,13 @@
 #include "MK64F12.h"
 #elif defined(TARGET_STM32F4)
 #warning "NO TRUE ENTROPY SOURCE FOR STM32F4"
+#if defined(TARGET_STM32F429ZI)
 #include "stm32f429xx.h"
+#elif defined(TARGET_STM32F401RE)
+#include "stm32f401xe.h"
+#else
+#error "This STM32F4 is not supported yet"
+#endif
 #else
 #error "TRUE ENTROPY SOURCE REQUIRED. NONE DEFINED FOR THIS TARGET."
 #endif
