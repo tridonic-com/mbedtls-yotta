@@ -1,6 +1,6 @@
 {
     "name": "mbedtls",
-    "version": "2.3.0-tri-0.8.0",
+    "version": "2.3.0-tri-0.9.0",
     "description": "The mbed TLS crypto/SSL/TLS library",
     "private": true,
     "licenses": [
